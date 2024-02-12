@@ -18,5 +18,5 @@ git diff --> Megmutatja a különbségeket a stage-elt és a munkamappa között
 git log --> Megmutatja a commit logokat
 git pull --> Lehúzza a remote repository-t és merge-li a local repository-val
 git mv &ltsource&gt; &ltdestination&gt;--> Áthelyez egy file-t a source-ből a destination-be.
-git branch -->listázhatunk,törölhetünk vagy létrehozhatunk branchet
+git branch --> listázhatunk,törölhetünk vagy létrehozhatunk branchet
 git merge --> Két vagy több repository-t összeolvaszt.
