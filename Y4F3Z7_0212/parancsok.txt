@@ -1,0 +1,22 @@
+Legfontosabb git parancsok
+
+A parancsok a git tag-al kezdődnek
+
+git config --global user.name "name" --> Beállítja a szerző nevét minden commit-hoz
+git config --global user.email "email" --> Beállítja szerző e-mail címét minden commit-hoz 
+
+git init --> Létrehoz egy repository-t vagy újra inicializál egy már létezőt.
+git clone --> Leklónoz egy már létező repository-t a használatban lévő gépre.
+
+git status --> Megmutatja hova mutat a HEAD, hogy milyen nem commit.elt változtatások vannak, valamint hogy a változtatások stage-elve vannak-e
+git add --> A staging-hez hozzáadja változtatásokat
+git rm --> Eltávolítja a megadott fike-t a stage-ből és a munkamappából.
+git commit -m "&lt;message&gt;" --> Elmenti a váltosztatásokat a repositoryba (local) valamint hozzáfűzünk egy üzenetet
+git push --> Elmenti a váltosztatásokat a repositoryba (remote)
+
+git diff --> Megmutatja a különbségeket a stage-elt és a munkamappa között
+git log --> Megmutatja a commit logokat
+git pull --> Lehúzza a remote repository-t és merge-li a local repository-val
+git mv &ltsource&gt; &ltdestination&gt;--> Áthelyez egy file-t a source-ből a destination-be.
+git branch -->listázhatunk,törölhetünk vagy létrehozhatunk branchet
+git merge --> Két vagy több repository-t összeolvaszt.
