@@ -4,7 +4,7 @@
     
     <head>
         <meta charset="UTF-8">
-        <title>Linkek (szöveges,kép,fájlra mutató)</title>
+        <title>Táblázat készítése, formázása</title>
 
     </head>
 
@@ -26,31 +26,58 @@
 
 
     <body>
-       
-        <table border="1" style="width: 100px;">
-            <tr  style="
-            height: 150px;
-            width: 450px;
-        ">
-              <td style=" text-align: center;">1 sor 1.elem</td>
-              <td style=" text-align: right;
-              vertical-align: bottom;">1 sor 2.elem</td>
-              <td style="text-align: center;
-              vertical-align: top;">1 sor 3.elem</td>
-            </tr>
-            <tr>
-              <td style="">2 sor 4.elem</td>
-              <td style="width:100px; padding: 0%;"><div class="scrollable">
-           asdasdasdassdasdfalhfldéouésdfhoéusfafé<br>DGHFOÉusdgfuoSDGFUODGFUODSFGO<br>UfgdojgfoudgfUGDFU<br>Gudfguowgfuo </div></td>
-              <td style="text-align: right;
-              vertical-align: top;">2 sor 6.elem</td>
-            </tr>
-            <tr>
-                <td style="">3 sor 7.elem</td>
-                <td style="">3 sor 8.elem</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, et.</td>
-              </tr>
-          </table>
+      <h1>Táblázat készítése, formázása</h1>
+      <table border="1" style="
+      width: 450px;
+      height: 150px;
+  ">
+      <tr style="
+          height: 150px;
+          width: 450px;
+      ">
+          <td style="
+              width: 150px;
+              text-align: center;
+          ">1. sor 1. elem</td>
+          <td style="
+              text-align: right;
+              vertical-align: bottom;
+          ">1. sor 2. elem</td>
+          <td style="
+              text-align: center;
+              vertical-align: top;
+          ">1. sor 3. elem</td>
+      </tr>
+      <tr style="
+          height: 50px;
+      ">
+          <td>2. sor 1. elem</td>
+          <td style="
+              width: 150px;
+              height: 150px;
+          ">
+              <div style="
+                  overflow: scroll;
+                  height: 150px;
+                  width: 150px;
+                  text-align: justify;
+              ">2. sor 2. elem Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate velit cum voluptas magnam voluptatibus dolor molestias, expedita tempore alias doloremque!</div>
+          </td>
+          <td style="
+              text-align: right;
+              vertical-align: top;
+          ">2. sor 3. elem</td>
+      </tr>
+      <tr style="
+          height: 300px;
+      ">
+          <td>3. sor 1. elem</td>
+          <td>3. sor 2. elem</td>
+          <td>3. sor 3. elem
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quisquam.
+          </td>
+      </tr>
+  </table>
 
     
     </body>

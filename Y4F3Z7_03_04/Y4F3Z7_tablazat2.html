@@ -4,31 +4,58 @@
     
     <head>
         <meta charset="UTF-8">
-        <title>Linkek (szöveges,kép,fájlra mutató)</title>
+        <title>Táblázat készítése, formázása</title>
 
     </head>
 
-
+    <style>
+      .table {
+          width: 450px;
+          height: 450px;
+          border-collapse: collapse;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: bold;
+      }
+      .red {
+          background-color: red;
+      }
+      .baige {
+          background-color: #ffff88;
+      }
+      .magenta {
+          background-color: magenta;
+          text-align: center;
+      }
+      .scroll {
+          overflow: scroll;
+          height: 150px;
+          width: 150px;
+          text-align: justify;
+      }
+      .center {
+          text-align: center;
+      }
+  </style>
 
     <body>
-       
-        <table border="1">
-            <tr>
-              <td>1 sor 1.elem</td>
-              <td>1 sor 2.elem</td>
-              <td>1 sor 3.elem</td>
-            </tr>
-            <tr>
-              <td>2 sor 4.elem</td>
-              <td>2 sor 5.elem</td>
-              <td>2 sor 6.elem</td>
-            </tr>
-            <tr>
-                <td>3 sor 7.elem</td>
-                <td>3 sor 8.elem</td>
-                <td>3 sor 9.elem</td>
-              </tr>
-          </table>
+      <h1>Táblázat készítése, formázása</h1>
+      <table border="1" class="table">
+        <tr class="red">
+            <td>1. sor 1. elem</td>
+            <td style="text-align: right;">1. sor 2. elem</td>
+            <td style="vertical-align: bottom; text-align: center;">1. sor 3. elem</td>
+        </tr>
+        <tr class="baige">
+            <td>2. sor 1. elem</td>
+            <td class="scroll"><div class="scroll">2. sor 2. elem Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem suscipit pariatur veritatis dolorum reprehenderit ipsum doloremque animi esse odio aliquam alias enim, eaque nam, voluptate laudantium a molestiae necessitatibus tenetur veniam eveniet? Architecto aliquid nulla praesentium. Odit, aliquid, reprehenderit dicta, nulla quasi perspiciatis eveniet ipsa illum iure provident delectus!</div></td>
+            <td class="center">2. sor 3. elem</td>
+        </tr>
+        <tr class="baige">
+            <td>3. sor 1. elem</td>
+            <td class="magenta">3. sor 2. elem</td>
+            <td>3. sor 3. elem</td>
+        </tr>
+    </table>
 
     
     </body>
