@@ -12,6 +12,68 @@
 
     </head>
 
+    <style>
+        html, body {
+            font-size: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 50rem;
+
+            background-color:rgb(155, 250, 245);
+            padding: 1rem;
+            text-align: center;
+
+            border-radius: 0.5rem;
+            box-shadow: inset 0 0 0.5rem 0 #00000066,
+                              0.25rem 0.25rem 0.5rem 0.25rem #000000aa;
+        }
+
+        header {
+            width: 125rem;
+
+            padding: 1rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        footer {
+            width: 50rem;
+
+            margin-top: 2rem;
+
+            border-top: 0.1rem solid black;
+
+            padding: 1rem;
+            text-align: right;
+            font-size: 0.8rem;
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            text-align: left;
+            gap: 1rem;
+            margin: 1rem;
+        }
+
+        .sidebyside {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: left;
+        }
+
+        .sidebyside>input {
+            width: 10rem;
+        }
+    </style>
+
 
     <body  >
       
@@ -21,34 +83,42 @@
         </header>
         
         <section>
-            <form action="/action_page.php" method="post" target="_self">
+            <form action="/action_page.php" method="post" target="_self" name="urlap" id="urlap">
                 
                 <label for="fname">Név: </label>
-                <input type="text" id="fname" name="fname" placeholder="Írd be a neved"><br><br>
+                <input type="text" id="fname" name="fname" placeholder="Írd be a neved" required pattern="([A-ZÁÉÍÓÖŐÚÜŰ a-záéíóöőúüű]){4,}" title="Gibsz Jakab" placeholder="Kő János"><br><br>
 
                 <label for="lname">PIN kód: </label>
-                <input type="text" id="lname" name="lname" placeholder="Írd be a PIN kódód"><br><br>
+                <input type="text" id="pin" name="pin" placeholder="Írd be a PIN kódód" required pattern="[0-9]{4}" title="4 számjegyű PIN kód"><br><br>
         
 
                 <label for="lname">Kedvenc gyümölcs: </label>
-                <input type="text" id="lname" name="lname"><br><br>
+                <input type="text" id="gyum" name="gyum" id="fav_fruit" name="fav_fruit" placeholder="Alma"><br><br>
 
                 <label for="lname">Életkor : </label>
-                <input type="text" id="lname" name="lname" ><br><br>
+                <input type="text" id="kor" name="kor" min="1" max="100" step="1" title="1 és 100 közötti érték" placeholder="18"><br><br>
             
 
                 <label for="lname">Lábméret : </label>
-                <input type="text" id="lname" name="lname" ><br><br>
+                <input type="text" id="feet" name="feet" ><br><br>
 
 
-                <label for="lname">Önbizalom : </label>
-                <input type="range" min="1" max="100" value="50"><br><br>
+                <label for="confidence">Önbizalom : </label>
+                <input type="range"id="confidence" name="confidence" min="1" max="100" value="50"><br><br>
 
                 <input type="submit" value="Elküldöm">
                 <input type="submit" value="Elküldöm ellenörzés nélkül">
 
             </form> 
-        </section>
+        </section
+
+
+
+    <footer>
+        <p>Forrás: <a href="http://html5doctor.com/" target="_blank">http://html5doctor.com/</a></p>
+        <p>Formátumok: <a href="https://www.html5pattern.com/" target="_blank">https://www.html5pattern.com/</a></p>
+        <p>JavaScript RegExp: <a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank">https://www.w3schools.com/jsref/jsref_obj_regexp.asp</a></p>
+    </footer>
     </body>
 
 
