@@ -26,11 +26,10 @@
 
             background-color:rgb(155, 250, 245);
             padding: 1rem;
-            text-align: center;
+            
 
             border-radius: 0.5rem;
-            box-shadow: inset 0 0 0.5rem 0 #00000066,
-                              0.25rem 0.25rem 0.5rem 0.25rem #000000aa;
+            
         }
 
         header {
@@ -76,35 +75,51 @@
 
 
     <body  >
-      
+        
+  
+
+
+
+
+
             
         <header>
             <h1>HTML 5 Űrlap - Y4F3Z7</h1>
         </header>
         
         <section>
-            <form action="/action_page.php" method="post" target="_self" name="urlap" id="urlap">
+            <form action="feldolgozo.php" method="post" target="_self" name="urlap" id="urlap">
                 
-                <label for="fname">Név: </label>
-                <input type="text" id="fname" name="fname" placeholder="Írd be a neved" required pattern="([A-ZÁÉÍÓÖŐÚÜŰ a-záéíóöőúüű]){4,}" title="Gibsz Jakab" placeholder="Kő János"><br><br>
+                <label for="fname">Név: <input type="text" id="nev" name="nev" placeholder="Írd be a neved" required pattern="([A-ZÁÉÍÓÖŐÚÜŰ a-záéíóöőúüű]){4,}" title="Gibsz Jakab" autofocus autocomplete="off" placeholder="Kő János"></label>
+                <br><br>
 
-                <label for="lname">PIN kód: </label>
-                <input type="text" id="pin" name="pin" placeholder="Írd be a PIN kódód" required pattern="[0-9]{4}" title="4 számjegyű PIN kód"><br><br>
+                <label for="lname">PIN kód: <input type="text" id="pin" name="pin" placeholder="Írd be a PIN kódód"   autocomplete="off" required pattern="[0-9]{4}" title="4 számjegyű PIN kód"></label>
+                <br><br>
         
 
-                <label for="lname">Kedvenc gyümölcs: </label>
-                <input type="text" id="gyum" name="gyum" id="fav_fruit" name="fav_fruit" placeholder="Alma"><br><br>
+                <label for="lname">Kedvenc gyümölcs: <input type="text"  id="gyumolcs" name="gyumolcs" list = "gyumolcsok" placeholder="Alma"></label>
 
-                <label for="lname">Életkor : </label>
-                <input type="text" id="kor" name="kor" min="1" max="100" step="1" title="1 és 100 közötti érték" placeholder="18"><br><br>
+                <datalist id = "gyumolcsok">
+                    <option value="dinnye">görörgdinyne</option>
+                    <option value="banan">banán</option>
+                    <option value="eper">250 Ft</option>
+                    <option value="korte">300 Ft</option>
+
+                </datalist>
+
+                <br><br>
+
+                <label for="lname">Életkor : <input type="number" id="kor" name="kor" min="10" max="100" step="1"  autofocus autocomplete="off" title="1 és 100 közötti érték" placeholder="18"></label>
+                <br><br>
+                
             
 
-                <label for="lname">Lábméret : </label>
-                <input type="text" id="feet" name="feet" ><br><br>
+                <label for="lname">Lábméret :  <input type="number" id="labmeret" name="labmeret" min="25" max="50" step="0.5" title="25 és 50 közötti érték"  autofocus autocomplete="off" placeholder="30"></label>
+               <br><br>
 
 
-                <label for="confidence">Önbizalom : </label>
-                <input type="range"id="confidence" name="confidence" min="1" max="100" value="50"><br><br>
+                <label for="confidence">Önbizalom :0<input type="range"id="onbizalom" name="onbizalom" min="1" max="100" value="50"> 100</label>
+                <br><br>
 
                 <input type="submit" value="Elküldöm">
                 <input type="submit" value="Elküldöm ellenörzés nélkül">
@@ -119,12 +134,12 @@
         <p>Formátumok: <a href="https://www.html5pattern.com/" target="_blank">https://www.html5pattern.com/</a></p>
         <p>JavaScript RegExp: <a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank">https://www.w3schools.com/jsref/jsref_obj_regexp.asp</a></p>
     </footer>
+
     </body>
 
 
 
 </html>
-
 
 
 
