@@ -96,10 +96,21 @@
 
             <button onclick="deaf()">néma</button>
             <button onclick="loud()">hangos</button>
-            <button onclick="halk()">halk</button>
+            <button onclick="quite()">halk</button>
 
             <button onclick="playVid()">indít</button>
             <button onclick="pauseVid()">megállít</button>
+            <button onclick="pausedVid()">indít/megállít</button>
+
+
+
+            <button onclick="small()">kicsi</button>
+            <button onclick="normal()">normál</button>
+            <button onclick="big()">nagy</button>
+
+             <button onclick="currently()">Eltelt idő</button>
+            <button onclick="ended()">Vége?</button>
+            <button onclick="length()">Hossz</button>
            
         </p> 
         
@@ -146,7 +157,7 @@
             x.volume = 1;
         } 
 
-        function halk() { 
+        function quite() { 
             x.volume = 0.5;
         } 
 
@@ -166,6 +177,49 @@
                 x.pause();
             }
         }
+
+
+
+        function small() {
+            x.width = 200;
+        }
+
+        function normal() {
+            x.width = 400;
+        }
+
+
+        function big() {
+            x.width = 600;
+        }
+
+
+
+        function currently() {
+            alert("Az eddig eltelt idő: " + x.currentTime + " mp");
+        }
+
+        function ended() {
+            if(x.ended){
+                alert("Véget ért a videó")
+            }
+            else{
+                alert("Még nem ért véget a videó")
+            }
+        }
+
+        function length() {
+            alert("A videó hossza: " + video.duration + " mp")
+            
+        }
+
+
+
+
+
+
+
+ 
 
 
 </script>
