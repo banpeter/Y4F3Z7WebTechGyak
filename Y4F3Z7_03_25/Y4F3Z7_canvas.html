@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Mérnökinformatika 2024</title>
+
+    </head>
+
+    <style>
+
+        header {
+                    width: 125rem;
+
+                    padding: 1rem;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: yellow;
+                }
+        footer {
+            width: 50rem;
+
+            margin-top: 2rem;
+
+            border-top: 0.1rem solid black;
+
+            padding: 1rem;
+            text-align: left;
+            font-size: 0.8rem;
+        }
+
+    </style>
+
+    
+
+<body>
+    <header>
+        <h1 style="color: orange;">Mérnökinformatika 2024</h1>
+    </header>
+    <canvas id="BP" width="700" height="350" style="border:1px solid #000000;">
+    Your browser does not support the HTML canvas tag.
+    </canvas>
+
+    <footer>
+        <p>Formátumok: <a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank">https://www.w3schools.com/html/html5_canvas.asp</a></p>
+        <p>JavaScript RegExp: <a href="https://www.w3schools.com/tags/canvas_drawimage.asp" target="_blank">https://www.w3schools.com/tags/canvas_drawimage.asp</a></p>
+    </footer>
+
+
+
+    <script>
+        const c = document.getElementById("BP");
+        const ctx = c.getContext("2d");
+        
+        ctx.beginPath();
+        ctx.arc(400,75,50,0.3*Math.PI,1.5*Math.PI);
+        ctx.fillStyle = "orange";
+        ctx.fill();
+        ctx.stroke();
+
+
+        ctx.lineWidth = "3";
+        ctx.strokeStyle = "blue";
+        ctx.beginPath();
+        ctx.rect(100, 230, 150, 100);
+    
+        ctx.stroke();
+
+        var img=document.createElement('img');
+        img.src='iit.jpg';
+        img.onload = function () {
+            ctx.drawImage(img,640,340,300,300,520,220,180,130)
+        }
+
+
+
+    
+        // Create gradient
+        const grd = ctx.createRadialGradient(175, 87, 10, 200, 100, 75);
+        grd.addColorStop(0, "#ffcc00");
+        grd.addColorStop(0.3, "#6600ff");
+        grd.addColorStop(1, "#33ff33");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(100, 60, 150, 75);
+
+    
+
+    </script> 
+
+</body>
+</html>
