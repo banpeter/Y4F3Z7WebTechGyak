@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="hu">
 
@@ -7,18 +9,45 @@
 
     </head>
 
+
 <body>
-    
-    <script>
-       
+    <h2>JSON Text konvertálása JavaScript objektumá</h2>
+    <div id="jsonRenderer">
 
-       const jsonText = '{"name": "Peter", "iranyitoszam": 1234, "city": "Budapest", "egyetem": "Miskolci Egytem"}';
-
-       
-            const jsonObject = JSON.parse(jsonText);
-            console.log("JSON szöveg sikeresen konvertálva JavaScript objektummá:", jsonObject);
-       
-    </script> 
-
+    </div>
 </body>
+
+
+    
+<script>
+
+
+        
+
+    const jsonRenderer = document.getElementById('jsonRenderer');
+
+    const adatok = `
+    {
+            "név": "Péter",
+            "irányítószám": "12345",
+            "város": "Budapest",
+            "egyetem": "Miskolci Egytem"
+        }`;
+
+    const jsonObj = JSON.parse(adatok);
+
+    for (const key in jsonObj) {
+        const p = document.createElement('p');
+        p.innerHTML = `<span><b>${key}</b></span>: ${jsonObj[key]}`;
+        jsonRenderer.appendChild(p);
+    }
+        
+   
+</script> 
+
+
 </html>
+
+
+
+

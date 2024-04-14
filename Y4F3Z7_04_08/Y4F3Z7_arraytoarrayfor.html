@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tömbökön belüli tömbök ciklusa</title>
+</head>
+<body>
+    <h1>Tömbökön belüli tömbök ciklusa</h1>
+    <ul id="car-list"></ul>
+
+    <script>
+        const BPObj = {
+            "name": "Bán Péter",
+            "age": 20,
+            "cars": [
+                {"name": "Toyota", "models": ["CHR", "Corolla", "Proace"]},
+                {"name": "Ford", "models": ["Kuga", "Mondeo", "Mustang"]},
+                {"name": "BMW", "models": ["320", "X3", "X5"]},
+                {"name": "Fiat", "models": ["500", "Panda", "Tipo"]}
+            ]
+        };
+
+        // Kiválasztjuk a listát, ahova majd beillesztjük az autók adatait
+        const carList = document.getElementById('car-list');
+
+        // Végigmegyünk az autókon és azok modellesein, majd beillesztjük őket a listába
+        BPObj.cars.forEach(car => {
+            // Létrehozunk egy új elemet az autóhoz
+            const carItem = document.createElement('li');
+            // Az autó nevét h3 címsorba tesszük
+            carItem.innerHTML = `<h3>${car.name}</h3>`;
+            // Létrehozunk egy új lista elemet a modelleknek
+            const modelList = document.createElement('ul');
+            // Végigmegyünk az autó modelleken
+            car.models.forEach(model => {
+                // Minden modellt hozzáadjuk a modelList listához
+                const modelItem = document.createElement('li');
+                modelItem.textContent = model;
+                modelList.appendChild(modelItem);
+            });
+            // Az autó modellek listáját hozzáadjuk az autó elemhez
+            carItem.appendChild(modelList);
+            // Az autó elemet hozzáadjuk a fő listához
+            carList.appendChild(carItem);
+        });
+    </script>
+</body>
+</html>

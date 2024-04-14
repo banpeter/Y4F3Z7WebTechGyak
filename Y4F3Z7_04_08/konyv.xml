@@ -1,11 +1,16 @@
-<konyv>
+<?xml version="1.0" encoding="UTF-8"?>
+<konyvek>
 
-  <szerzo>Jani</szerzo>
-  <cim>Reminder</cim>
-  <datum>Don't forget me this weekend!</datum>
-  
-  <szerzo>Jani</szerzo>
-  <cim>Reminder</cim>
-  <datum>Don't forget me this weekend!</datum>
+	<konyv id="0">
+	  <szerzo>Nyékyné Dr. Gaizler Judit</szerzo>
+	  <cim>ava 2 I-II. - Útikalauz programozóknak 5.0</cim>
+	  <datum>2009</datum>
+	</konyv>
+	
+	<konyv id="1">
+	  <szerzo>Reiter Istváns</szerzo>
+	  <cim>C# programozás lépésről lépésre</cim>
+	  <datum>2018</datum>
+	</konyv>
 
-</konyv>
+</konyvek>

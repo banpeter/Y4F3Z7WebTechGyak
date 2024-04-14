@@ -1,33 +1,30 @@
 
 
+
+
 <!DOCTYPE html>
 <html lang="hu">
+<head>
+    <meta charset="UTF-8">
 
-    <head>
-        <meta charset="UTF-8">
-        
-
-    </head>
-
+</head>
 <body>
-    
-    <script>
-                
-            const adatok = {
+    <h1>JSON megvalósítása – JavaScript</h1>
+    <div class="jsonText">
+ 
+    </div>
+</body>
+<script>
+    const adatok = {
                 név: "Péter",
                 irányítószám: "12345",
                 város: "Budapest",
                 egyetem: "Miskolci Egytem"
-            };
+            }
 
-            
-            
-                const jsonText = JSON.stringify(adatok);
-                console.log("A JSON szöveg adatai:", jsonText);
-        
-            
-       
-    </script> 
+    const jsonText = JSON.stringify(adatok, null, 4);
 
-</body>
+    const jsonTextDiv = document.querySelector('.jsonText');
+    jsonTextDiv.innerHTML = jsonText;
+</script>
 </html>

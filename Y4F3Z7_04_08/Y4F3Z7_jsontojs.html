@@ -1,54 +1,45 @@
 <!DOCTYPE html>
-<html lang="hu">
-
-    <head>
-        <meta charset="UTF-8">
-        
-
-    </head>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Data</title>
+</head>
 <body>
+    <h1>Book Data</h1>
+    <div id="book-list"></div>
 
     <script>
-    
+        // JavaScript kód itt
 
-    //xml data 
-    let xmlstr = 
-    `<konyvek>
+        // Először is, lekérjük a JSON adatokat a fájlból
+        fetch('konyv.json')
+            .then(response => response.json())
+            .then(data => {
+                // Miután megkaptuk az adatokat, létrehozunk egy függvényt, ami létrehozza a könyvek listáját
+                displayBooks(data);
+            })
+            .catch(error => console.error('Hiba történt:', error));
 
-        <konyv id='01'>
-            <szerzo>Nyékyné Dr. Gaizler Judit</szerzo>
-            <cim>Java 2 I-II. - Útikalauz programozóknak 5.0</cim>
-            <datum>2009</datum>
-        </konyv>
+        function displayBooks(books) {
+            // Kiválasztjuk a HTML-ben lévő 'book-list' elemet, ahová beillesztjük a könyvek adatait
+            const bookList = document.getElementById('book-list');
 
-        <konyv id='02'>
-            
-            <szerzo>Reiter István</szerzo>
-            <cim>C# programozás lépésről lépésre</cim>
-            <datum>2018</datum>
-        </konyv>
-    
-    </konyvek>`; 
-    const jsonText={
-                "konyvek": {
-                    "konyv": [
-                    {
-                        "szerzo": "Nyékyné Dr. Gaizler Judit",
-                        "cim": "Java 2 I-II. - Útikalauz programozóknak 5.0",
-                        "datum": 2009
-                    },
-                    {
-                        "szerzo": "Reiter István",
-                        "cim": "C# programozás lépésről lépésre",
-                        "datum": 2018
-                    }
-                    ]}
-                }
+            // Végigmegyünk a könyveken és hozzáadjuk őket a HTML-hez
+            books.forEach(book => {
+                // Létrehozzuk az adott könyv elemét
+                const bookElement = document.createElement('div');
+                bookElement.innerHTML = `
+                    
+                    <p>szerzo: ${book.szerzo}</p>
+                    <p>cim: ${book.cim}</p>
+                    <p>datum: ${book.datum}</p>
+                `;
 
-    
-
+                // Hozzáadjuk az elemet a listához
+                bookList.appendChild(bookElement);
+            });
+        }
     </script>
-
 </body>
 </html>
