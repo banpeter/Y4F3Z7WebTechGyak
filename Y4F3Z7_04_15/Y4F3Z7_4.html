@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js" defer></script>
+    <script src="4.js" defer></script>
+    <title>jQuery feladatok</title>
+    <style>
+        #infobox {
+            display: inline-block;
+            padding: 1rem;
+            margin: 1rem;
+            border: 1px solid black;
+            border-radius: 0.5rem;
+        }
+
+        form {
+            display: inline-block;
+            background-color: #aaccff;
+            padding: 1rem;
+            padding-right: 10rem;
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery feladatok</h1>
+    <p class="hide">
+        A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.
+    </p>
+    <p class="hide">
+        Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.
+    </p>
+    <p class="hide">
+        Effekteket és animációt adhatunk HTML elemeinkhez. Számtalan plugint írtak hozzá.
+    </p>
+    <p>
+        <button id="hide">Elrejt</button>
+        <button id="show">Megjelenít</button>
+        <button id="toggle">Ki/Bekapcsol</button>
+    </p>
+    <p>
+        <form id="form" method="post">
+            <h2>Űrlap</h2>
+            <label>
+                Név:
+                <input type="text" name="nev" id="nev" placeholder="Név">
+            </label><br><br>
+            <label>
+                E-mail:
+                <input type="email" name="email" id="email" placeholder="Email">
+            </label><br><br>
+            <label>
+                Jelszó:
+                <input type="password" name="jelszo" id="jelszo" placeholder="Jelszó">
+            </label><br><br><br>
+            <button id="join">Jelentkezés</button>
+        </form>
+    </p>
+    <p>
+        <button id="t01">Áttetszőség = 0.1</button>
+        <button id="t05">Áttetszőség = 0.5</button>
+        <button id="t08">Áttetszőség = 0.8</button>
+    </p>
+    <p>
+        <button id="formhide">Elrejt</button>
+        <button id="formshow">Megjelenít</button>
+        <button id="formtoggle">Ki/Bekapcsol</button>
+    </p>
+</body>
+</html>
