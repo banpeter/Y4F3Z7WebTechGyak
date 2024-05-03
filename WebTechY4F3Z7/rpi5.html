@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Raspberry PI 400</title>
+    <link rel="stylesheet" href="css/rpi5.css">
+    <link rel="icon" href="img/icon.png">
+    <script src="lib/jquery-3.7.1.min.js" ></script>
+    <script src="jquery/hideTable.js" ></script>
+
+    <style>
+
+        .bot{
+            position: absolute;
+            background-color: rgb(189, 181, 181);
+            width: 100%;
+            height: 10%;
+            top:360%;
+            left:0;
+            overflow: auto;
+            height: auto;
+            text-align: center;
+            color: #d1345c;
+        }
+        #references{
+            position: fixed;
+            z-index: 1;
+            
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+<div class="top">
+    <p class="cim">Raspberry PI <span style="color: yellow">5</span></p>
+</div>
+
+
+
+<div class="fo">
+        <img style="width: 700px; height: 400px;" src="img/pi5-labelled.jpg" alt="No source">
+</div>
+
+
+
+
+<video id="rpi400_video" width="400" class="video" controls>
+    <source src="videos/rpi5.mp4"" type="video/mp4">
+    Your browser does not support HTML video.
+</video>
+
+
+
+<div style="position: absolute; top: 10%; width: 100%;">
+    <div style="width: max-content; margin: auto;"> 
+        <p > 
+            <button  onclick="reallySlow()">Nagyon lassú</button> 
+            <button onclick="slow()">lassú</button>
+            <button onclick="normal()">normál</button>
+            <button onclick="fast()">gyors</button>
+            <button onclick="reallyfast()">nagyon gyors</button><br><br>
+        
+            <button onclick="deaf()">néma</button>
+            <button onclick="loud()">hangos</button>
+            <button onclick="quite()">halk</button><br><br>
+        
+            <button onclick="currently()">Eltelt idő</button>
+            <button onclick="ended()">Vége?</button>
+
+        </p> 
+    </div>
+</div>
+
+
+
+<div class="bevezetoPosition">
+    <div class="bevezeto">
+        <article></article>
+            <h3><p class="kiscim">Átlalános tudnivalók</p></h3>
+            <p>A <span style="color:#d1345c">Raspberry PI 400</span>  egy olyan új modell melynek keretein belül, ha asztali számítógépet szeretne használni,
+                nem szükséges mindenféle körülményes megoldásokat alkalmazni.</p>
+            <p>Az eszköz eleve úgy van kialakítva hogy a csomagból való kibontás után egy könnyed összeszerelés 
+                követően egyből használható is.
+                Így már nincs szüksgé házilag barkácsolt case-ek gyártására se egyébb nyűglődésre.
+            </p>
+            <p>Az eszköz rendelkezik a megfelelő erőforrásokkal és szoftverrel ahhoz hogy tényleges aztali számítógépként lehessen használni.
+                Mind emellett rendelkezik a lényeges hardveres funkciókkal mint másmodellek (pl:GPIO)
+            </p>
+            <p>Mint a fent látható animáció is mutatja a rendelést követően házhoz szállítjuk a termékünket így önnekki sem kell mozdulni ahhozhogy hozzáférjen eme remek géphez! </p>
+            <p>Rendelje meg a készletet az alábbi linken: <a href="https://malnapc.hu/yis/raspberry-pi/pi-400">https://malnapc.hu/yis/raspberry-pi/pi-400</a> </p>
+        </article>
+            <aside>
+                <h4>Epcot Center</h4>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+              </aside>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="kepPosition">
+    <img class="kep" src="img/raspberry-pi-5.webp" alt="No source">
+
+</div>
+    
+
+
+<p class="spec">Specifikációk és egyéb modellek</p>
+
+<div class="listak">
+
+
+    <ul class="lista">
+        <li>CPU: megnövelt órajelű, 1,8GHz-es quad.core ARM Cortex-A72 </li>
+        <li>Gyári passzív CPU hűtési technológia</li>
+        <li>RAM: 4GB LPDDR4-3200 DRAM</li>
+        <li>GPU: VideoCore VI graphics (OpenGL ES 3.1, Vulkan), 4kp60 HEVC decode</li>
+        <li>LAN: True Gigabit Ethernet</li>
+        <li>Wireless LAN: 2,4GHz és 5GHz-es kétsávos IEEE 802.11 b/g/n/ac wifi</li>
+        <li>Bluetooth: 5.0 BLE</li>
+        <li>USB: 2× USB 3.0 és 1× USB 2.0 portok</li>
+        <li>HDMI: 2× micro-HDMI port (1× 4kp60 vagy 2× 4kp30)</li>
+        <li>Tápellátás: USB-C 5V 3A-es gyári tápegységről</li>
+        <li>GPIO: Raspberry Pi kompatibilis 40-pines horizontális GPIO csatlakozó</li>
+    </ul>
+
+    <ul class="lista2">
+        <li>Raspberry PI 3-as család</li>
+        <ul>
+            <li>Raspberry PI 3 A+</li>
+            <li>Raspberry PI 3 B+</li>
+        </ul>
+        <li>Raspberry PI 4-3s család</li>
+        <ul>
+            <li>Raspberry PI 4 B 2GB</li>
+            <li>Raspberry PI 4 B 4GB</li>
+            <li>Raspberry PI 4 B 8GB</li>
+        </ul>
+
+    </ul>
+
+</div>
+
+
+
+
+
+
+
+<div class="tablaPosition">
+    <p class="kul">Különbségek</p>
+    <table class="tabla">
+        <tr>
+            <td class="elso_oszlop">Raspberry PI 3</td>
+            <td class="masodik_oszlop">Raspberry PI 400</td>
+        </tr>
+        <tr>
+            <td>Általánosan felhsználható</td>
+            <td>Leginkább asztali számítogépként</td>
+        </tr>
+        <tr>
+            <td>Haszálata és összeszerelése tapasztalatot igényel</td>
+            <td>Kezdőbarát egyszerű kialakítású</td>
+        </tr>
+        <tr>
+            <td>A gép megvétele után minden periféria beszerzésére szükség van</td>
+            <td>A billentyűzet bele van integrálva</td>
+        </tr>
+        <tr>
+            <td>Használata macerás</td>
+            <td>Használata felhasználó barát</td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="tabla2Position" id="toggleTable">
+    <p class="kul">Különbségek</p>
+    <table class="tabla2" id="table2">
+        <tr>
+            <td class="elso_oszlop">Raspberry PI 5</td>
+            <td class="masodik_oszlop">Raspberry PI 400</td>
+        </tr>
+        <tr>
+            <td>Általánosan felhsználható</td>
+            <td>Leginkább asztali számítogépként</td>
+        </tr>
+        <tr>
+            <td>Haszálata és összeszerelése tapasztalatot igényel</td>
+            <td>Kezdőbarát egyszerű kialakítású</td>
+        </tr>
+        <tr>
+            <td>A gép megvétele után minden periféria beszerzésére szükség van</td>
+            <td>A billentyűzet bele van integrálva</td>
+        </tr>
+        <tr>
+            <td>Használata macerás</td>
+            <td>Használata felhasználó barát</td>
+        </tr>
+    </table>
+</div>
+
+<button  id="toggleButton">Toggle</button>
+
+<footer id="references">
+    <p>Felhasznált források:<br>
+    <a href="references.html">Források</a></p>
+</footer>
+
+
+<div class="bot">
+    <p class="linkek">
+        <nav>
+            <a class="links selected" href="main.html"> Kezdő oldal</a>
+            <a class="links" href="https://malnapc.hu/yis/raspberry-pi/pi-400"> Rendelés</a>
+            <a class="links" href="https://www.raspberrypi.com/contact/"> Kapcsolat felvétel</a>
+            <a class="links" href="https://www.raspberrypi.com/">További információk</a>
+        </nav>
+    </p>
+</div>
+
+</body>
+
+
+<script>
+    var x = document.getElementById("rpi400_video");
+
+
+    function reallySlow() { 
+        x.playbackRate = 0.25;
+    } 
+
+    function slow() { 
+        x.playbackRate = 0.5;
+    } 
+
+    function normal() { 
+        x.playbackRate = 1;
+    } 
+
+    function fast() { 
+        x.playbackRate = 1.25;
+    } 
+
+    function reallyfast() { 
+        x.playbackRate = 1.5;
+    } 
+
+    function deaf() { 
+        x.volume = 0
+    } 
+
+    function loud() { 
+        x.volume = 1;
+    } 
+
+    function quite() { 
+        x.volume = 0.5;
+    } 
+
+    function playVid() {
+        x.play();
+    }
+
+    function pauseVid() {
+        x.pause();
+    }
+
+    function pausedVid() {
+        if(x.paused){
+            x.play();
+        }
+        else{
+            x.pause();
+        }
+    }
+
+
+
+
+
+    function currently() {
+        alert("Az eddig eltelt idő: " + x.currentTime + " mp");
+    }
+
+    function ended() {
+        if(x.ended){
+            alert("Véget ért a videó")
+        }
+        else{
+            alert("Még nem ért véget a videó")
+        }
+    }
+
+
+
+
+
+</script>
+
+
+</html>

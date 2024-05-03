@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Raspberry PI 400</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    
+    <link rel="icon" href="/img/icon.png">
+    <script src="/lib/jquery-3.7.1.min.js" ></script>
+    <script src="/jquery/delivery.js" ></script>
+    <script src="/jquery/formCheck.js" ></script>
+    <script src="/jquery/load.js"></script>
+    <script src="/jquery/script.js"></script>
+
+
+    <style>
+
+        .top{
+            position: fixed;
+            background-color: #d1345c;
+            width: 100%;
+            height: 10%;
+            top:0%;
+            left:0;
+            overflow: auto;
+            height: auto;
+            text-align: center;
+            color: #d1345c;
+            z-index: 1;
+        }
+        #references{
+            position: fixed;
+            z-index: 1;
+            
+        }
+
+        .jsondiv{
+            position: absolute;
+            top: 220%;
+            right: 10%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="topcim">
+        <p class="cim"> <span style="color: #d1345c">Raspberry PI Home</span></p>
+    </div>
+    
+    <div class="top">
+        <p class="linkek">
+            <nav>
+                
+                <a class="links selected" href="rpi400.html"> RPI400</a>
+                <a class="links selected" href="rpi5.html"> RPI5</a>
+                <a class="links selected" href="rpizero.html"> RPIZERO</a>
+                <a class="links selected" href="rpipico.html"> RPI_PICO</a>
+                <a class="links" href="https://malnapc.hu/yis/raspberry-pi/pi-400"> Rendelés</a>
+                <a class="links" href="https://www.raspberrypi.com/contact/"> Kapcsolat</a>
+                <a class="links" href="https://www.raspberrypi.com/">További információ</a>
+            </nav>
+        </p>
+    </div>
+
+
+    
+    <div class="fo">
+            <img src="/img/hero.webp" alt="No source">
+    </div>
+    
+    
+    
+    <div class="bot">
+        <p class="linkek">
+        <a class="links selected" href="https://www.raspberrypi.com/"> Home</a>
+        <a class="links" href="https://malnapc.hu/yis/raspberry-pi/pi-400"> Order</a>
+        <a class="links" href="https://www.raspberrypi.com/contact/"> Contact Us</a>
+        <a class="links" href="https://www.raspberrypi.com/">More Info</a>
+        </p>
+    </div>
+
+    <div class="szoveg">
+        <p> A raspberyy pi cég számos termékkel rendelkezik, amelyek különböző igényeket elégítenenk ki</p>
+        
+        <p> <b><a>Raspberry Pi 5</a></b> </p>
+        <p> <b><a href="/rpi400.html">Raspberry Pi 400</a></b> </p>
+        <p> <b><a>Raspberry Pi Pico</a></b> </p>
+        <p> <b><a>Raspberry Pi Zero</a></b> </p>
+
+        <p> A megfelelő weboldalakról megrendelve még házhoz is szállítják-->ide egy jquerry animáció</p>
+
+    </div>
+
+
+    <div class="auto">
+        <img id="car" src="/img/auto.png" alt="No source">
+        
+    </div>
+    
+    <div class="wearehouse">
+        <img src="/img/warehouse.png" alt="No source">
+        
+    </div>
+    
+    <div class="haz">
+        <img src="/img/haz2.png" alt="No source">
+        
+    </div>
+
+
+    
+
+
+
+    <section>
+        <form action="#" method="post" id="myForm">
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email"><br><br>
+            
+            <label for="textarea_input">Megjegyzés:</label><br>
+            <textarea id="textarea_input" name="textarea_input" rows="4" cols="50"></textarea><br><br>
+            
+            <label for="datalist_input">Model:</label>
+            <input list="products" id="products" name="products">
+            <datalist id="products">
+              <option value="Pico">
+              <option value="RPI5">
+              <option value="RPI400">
+              <option value="RPIZERO">
+              <option value="COMPUTE MODLUE">
+            </datalist><br><br>
+            
+            <label for="checkbox_input">Cég ként rendelem:</label>
+            <input type="checkbox" id="checkbox_input" name="checkbox_input" value="checkbox"><br><br>
+            
+            <label for="radio_input">Radio Button:</label><br>
+            <input type="radio" id="radio_input1" name="radio_input" value="option1">
+            <label for="radio_input1">Option 1</label><br>
+            <input type="radio" id="radio_input2" name="radio_input" value="option2">
+            <label for="radio_input2">Option 2</label><br><br>
+            
+            <label for="color_input">Kedvenc Szín:</label>
+            <input type="color" id="color_input" name="color_input"><br><br>
+            
+            <label for="date_input">Rendelés Dátuma:</label>
+            <input type="date" id="date_input" name="date_input"><br><br>
+
+           
+         
+           
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+
+    </section>
+
+    <div class="jsondiv" id="json-data"></div>
+
+
+    
+
+    <footer id="references">
+        <p>Felhasznált források:<br>
+        <a href="references.html">Források</a></p>
+    </footer>
+
+    <div class="bottom"><span style="color: white;"><p>További információkért keressel fel a <a>https://www.raspberrypi.com/</a>-ot</p></span> </div>
+
+</body>
+
+
+</html>
