@@ -10,7 +10,7 @@
     <script src="/jquery/delivery.js" ></script>
     <script src="/jquery/formCheck.js" ></script>
     <script src="/jquery/load.js"></script>
-    <script src="/jquery/script.js"></script>
+    <script src="/jquery/script2.js"></script>
 
 
     <style>
@@ -81,19 +81,21 @@
         <a class="links" href="https://www.raspberrypi.com/">More Info</a>
         </p>
     </div>
+    <div class="szovegPoz"">
+        <div class="szoveg">
+            <h2 class="kiscim">Rövid ismertető</h2>
+            <p> A Raspbery Pi Foundation  számos termékkel rendelkezik, amelyek különböző igényeket elégítenenk ki mind az iparban mind az oktatásban valamint a személyes felhasználóknak. Amennyiben szükésünk van egy microcontroller-re vagy egy SBC-re(<b>S</b>ingel <b>B</b>oard <b>C</b>omputer) vagy akár egy a commodore 64-re emlékeszető számítógépre, akkor az megtaláljuk a termékek között.</p>
+            <p>Raspbery Pi Foundation piacvezető  az SBC-ék piacán. Ennek meglepő módon nem a hardwawre az oka, annak ellenére hogy az is kitűnő. Más főként kínai cégek is gyártanak  más specifikációju SBC-t amelyek vagy nagyobb teljesítményűak vagy olcsóbak, vagy több I/O -val rendelkezik. Ahol a A Raspberry Pi termékei messze kiemelkednek az a software-es támogatás. Rendkívúl jó szoftware-ek állnak rendelkezésre a termékeikhez, nem beszélve a nagyszerű és részletes dokumentációkaról, oktató anyagokról és a nagy közösségről.</p>
+            <div style="text-align: center;">
+                <p> <b><a href="/rpi5.html">Raspberry Pi 5</a></b> </p>
+                <p> <b><a href="/rpi400.html">Raspberry Pi 400</a></b> </p>
+                <p> <b><a href="/rpipico.html">Raspberry Pi Pico</a></b> </p>
+                <p> <b><a href="/rpizero.html">Raspberry Pi Zero</a></b> </p>
+            </div>
+            <aside><p> A megfelelő weboldalakról megrendelve élhetünk a házhoz  szállítás opcióval is amelyet az alábbi ábra is szemléltet </p></aside>
 
-    <div class="szoveg">
-        <p> A raspberyy pi cég számos termékkel rendelkezik, amelyek különböző igényeket elégítenenk ki</p>
-        
-        <p> <b><a>Raspberry Pi 5</a></b> </p>
-        <p> <b><a href="/rpi400.html">Raspberry Pi 400</a></b> </p>
-        <p> <b><a>Raspberry Pi Pico</a></b> </p>
-        <p> <b><a>Raspberry Pi Zero</a></b> </p>
-
-        <p> A megfelelő weboldalakról megrendelve még házhoz is szállítják-->ide egy jquerry animáció</p>
-
+        </div>
     </div>
-
 
     <div class="auto">
         <img id="car" src="/img/auto.png" alt="No source">
@@ -119,6 +121,7 @@
         <form action="#" method="post" id="myForm">
             <label for="name">Név:</label>
             <input type="text" id="name" name="name"><br><br>
+            <span id="email_error" style="color: red;"></span>
 
             <label for="email">E-mail:</label>
             <input type="text" id="email" name="email"><br><br>

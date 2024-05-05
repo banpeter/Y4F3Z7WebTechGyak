@@ -1,0 +1,32 @@
+{
+    "company": "Corporation",
+    "employees": [
+      {
+        "name": "John Doe",
+        "position": "Software Engineer",
+        "department": "Engineering",
+        "skills": ["JavaScript", "Python", "SQL"]
+      },
+      {
+        "name": "Jane Smith",
+        "position": "Marketing Manager",
+        "department": "Marketing",
+        "skills": ["Marketing Strategy", "Social Media Management"]
+      }
+    ],
+    "departments": {
+      "Engineering": {
+        "location": "Building A",
+        "head": "Alice Johnson",
+        "team_lead": "John Doe",
+        "projects": ["Project A", "Project B"]
+      },
+      "Marketing": {
+        "location": "Building B",
+        "head": "Bob Thompson",
+        "team_lead": "Jane Smith",
+        "campaigns": ["Campaign X", "Campaign Y"]
+      }
+    }
+  }
+  

@@ -93,7 +93,7 @@ body{
 
 .listak {
     position: absolute;
-    top: 230%;
+    top: 215%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center; /* Center the lists horizontally */
@@ -120,9 +120,8 @@ body{
 
 
 .spec{
-    top: 223%;
-    left:40%;
-    position: absolute;
+
+    margin: auto;
     font-size: large;
     font-weight: bolder; 
     text-align: center;
