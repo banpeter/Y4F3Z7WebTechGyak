@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="Y4F3Z7_4.js" defer></script>
+    <title>jQuery feladatok - Animáció</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 120px;
+            padding: 20px;
+            
+            background-color: #44ffaa;
+            
+            position: relative;
+
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        input[type="number"] {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery feladat</h1>
+    <h2>Adjon meg két számot!</h2>
+    <label>
+        <b>A=</b> <input type="number" id="a" value="0">
+    </label><br><br>
+    <label>
+        <b>B=</b> <input type="number" id="b" value="0">
+    </label><br><br>
+    <fieldset>
+        <input type="radio" name="op" id="mul" value="mul" checked>A*B <br>
+        <input type="radio" name="op" id="div" value="div">A/B <br>
+        <input type="radio" name="op" id="add" value="add">A+B <br>
+        <input type="radio" name="op" id="sub" value="sub">A-B <br>
+    </fieldset><br>
+    <button id="calc">Számol</button><br>
+    <p id="result">Eredmény: </p>
+</body>
+</html>
