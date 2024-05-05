@@ -80,11 +80,13 @@ body{
 .kep{
     
 
-    top: 105%;
+    
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    height: 50%;
+
 }
 
 
@@ -93,7 +95,7 @@ body{
 
 .listak {
     position: absolute;
-    top: 215%;
+    top: 240%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center; /* Center the lists horizontally */
@@ -131,7 +133,7 @@ body{
     
 }
 .tablaPosition{
-    top: 270%;
+    top: 320%;
     width: 100%;
     position: absolute;
 
@@ -148,7 +150,7 @@ body{
 
 .tabla2Position{
     position: absolute;
-    top: 320%;
+    top: 380%;
     width: 100%;
    
 
@@ -161,7 +163,7 @@ body{
 
 #toggleButton{
     position: absolute;
-    top: 350%;
+    top: 410%;
     left: 50%;
 }
 
@@ -196,7 +198,7 @@ td{
 
 
 .linkek{
-    top:-10%
-    ;
+    position: absolute;
+    top:500%;
 
 }
