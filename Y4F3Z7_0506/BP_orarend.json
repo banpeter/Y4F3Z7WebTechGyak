@@ -1,0 +1,409 @@
+{
+"orak":[
+    {
+    "kurzusnev": "Webtechnológiák alapjai",
+    "oktato":"Dr. Bednarik László",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Hétfő",
+            "tol":"12:00",
+            "ig":"13:30"
+        },
+    "helyszin":"Inf/103",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+{
+
+    "kurzusnev": "SzoftverTechnológiák gyakorlat",
+    "oktato":"Dr. Tompa Tamás",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Hétfő",
+            "tol":"10:00",
+            "ig":"11:30"
+        },
+    "helyszin":"Inf/103",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+
+{
+
+    "kurzusnev": "Modern Fizika",
+    "oktato":"Dr. Kovács Endre",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Kedd",
+            "tol":"08:00",
+            "ig":"09:30"
+        },
+    "helyszin":"A1/320",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+
+{
+
+    "kurzusnev": "Java",
+    "oktato":"Szűcs Miklós",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Kedd",
+            "tol":"10:00",
+            "ig":"11:30"
+        },
+    "helyszin":"Inf/101",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+
+{
+
+    "kurzusnev": "Adatbázis rendszerek II. gyakorlat",
+    "oktato":"Szűcs Miklós",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Kedd",
+            "tol":"12:00",
+            "ig":"13:30"
+        },
+    "helyszin":"Inf/101",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+
+{
+
+    "kurzusnev": "Szoftvertechnológiák gxakorlat",
+    "oktato":"Dr. Tompa Tamás",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Szerda",
+            "tol":"08:00",
+            "ig":"08:45"
+        },
+    "helyszin":"A1/305",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+
+{
+
+    "kurzusnev": "Adatbázis rendszerek II.",
+    "oktato":"Prof. Dr. Kovács László",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Szerda",
+            "tol":"10:00",
+            "ig":"11:30"
+        },
+    "helyszin":"A1/305",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+
+
+{
+
+    "kurzusnev": "Biztonság védelem a számítástechnikában",
+    "oktato":"Dr. Wagner György",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Szerda",
+            "tol":"12:00",
+            "ig":"13:30"
+        },
+    "helyszin":"A1/XXXII",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+
+{
+
+    "kurzusnev": "Optimalizálás",
+    "oktato":"Dr Köre Attila",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Szerda",
+            "tol":"14:00",
+            "ig":"15:30"
+        },
+    "helyszin":"A1/XXXII",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+{
+
+    "kurzusnev": "Optimalizálás gyakorlat",
+    "oktato":"Dr.Köre Attila",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Szerda",
+            "tol":"16:00",
+            "ig":"17:30"
+        },
+    "helyszin":"A1/XXXII",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+{
+
+    "kurzusnev": "Biztonság védelem a számítástechnikában gyakorlat",
+    "oktato":"Dr. Wagner György",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Csütörtök",
+            "tol":"08:00",
+            "ig":"09:30"
+        },
+    "helyszin":"Inf/101",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+},
+
+
+{
+
+    "kurzusnev": "Java gyakorlat",
+    "oktato":"a",
+    "szak":"GEIK",
+    "idopont":
+        {
+            "nap":"Szerda",
+            "tol":"10:00",
+            "ig":"11:30"
+        },
+    "helyszin":"A1/XXXII",
+    "cim":
+        {
+            "street":"Egyetemváros",
+            "city": "Miskolc",
+            "code":"1021"
+        },
+    "phone number":
+        [
+
+            {
+                "type": "Vezetékes:",
+                "number":"0630 459-668"
+            },
+            {
+                "type":"Mobil:",
+                "number":"0630 320-222"
+            }
+
+        ]
+
+}
+]
+}
