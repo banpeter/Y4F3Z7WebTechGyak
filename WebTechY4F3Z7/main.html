@@ -15,6 +15,12 @@
 
     <style>
 
+        #wrapper{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1920px;
+        }
+
         .top{
             position: fixed;
             background-color: #d1345c;
@@ -44,7 +50,7 @@
 
     </style>
 </head>
-
+<div id="wrapper">
 <body>
 
     <div class="topcim">
@@ -54,14 +60,12 @@
     <div class="top">
         <p class="linkek">
             <nav>
-                
-                <a class="links selected" href="rpi400.html"> RPI400</a>
-                <a class="links selected" href="rpi5.html"> RPI5</a>
-                <a class="links selected" href="rpizero.html"> RPIZERO</a>
-                <a class="links selected" href="rpipico.html"> RPI_PICO</a>
-                <a class="links" href="https://malnapc.hu/yis/raspberry-pi/pi-400"> Rendelés</a>
-                <a class="links" href="https://www.raspberrypi.com/contact/"> Kapcsolat</a>
-                <a class="links" href="https://www.raspberrypi.com/">További információ</a>
+                <a class="links selected" href="main.html"><b>Home</b> </a>
+                <a class="links selected" href="rpi400.html"><b> RPI400</b></a>
+                <a class="links selected" href="rpi5.html"><b>RPI5</b> </a>
+                <a class="links selected" href="rpizero.html"> <b>RPIZERO</b></a>
+                <a class="links selected" href="rpipico.html"><b>RPI_PICO</b> </a>
+
             </nav>
         </p>
     </div>
@@ -123,15 +127,17 @@
             <label for="textarea_input">Megjegyzés:</label><br>
             <textarea id="textarea_input" name="textarea_input" rows="4" cols="50"></textarea><br><br>
             
-            <label for="datalist_input">Model:</label>
-            <input list="products" id="products" name="products">
-            <datalist id="products">
+            <label for="products">Model:</label>
+            <input list="products2" id="products" name="products">
+            <datalist id="products2">
               <option value="Pico">
               <option value="RPI5">
               <option value="RPI400">
               <option value="RPIZERO">
-              <option value="COMPUTE MODLUE">
+              <option value="COMPUTE MODULE">
             </datalist><br><br>
+
+     
             
             <label for="checkbox_input">Cég ként rendelem:</label>
             <input type="checkbox" id="checkbox_input" name="checkbox_input" value="checkbox"><br><br>
@@ -173,5 +179,5 @@
 
 </body>
 
-
+</div>
 </html>

@@ -3,13 +3,18 @@
 <html>
 
 <head>
-    <title>Raspberry PI 400</title>
+    <title>Raspberry PI Pico</title>
     <link rel="stylesheet" href="css/rpipico.css">
     <link rel="icon" href="img/icon.png">
     <script src="lib/jquery-3.7.1.min.js" ></script>
     <script src="jquery/hideTable.js" ></script>
 
     <style>
+        #wrapper{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1920px;
+        }
 
         .bot{
             position: absolute;
@@ -34,12 +39,23 @@
 
 
 </head>
-
+<div id="wrapper">
 <body>
 
-<div class="top">
-    <p class="cim">Raspberry PI <span style="color: yellow">Pico</span></p>
-</div>
+
+
+    <div class="top">
+        <p class="linkek">
+            <nav>
+                <a class="links selected" href="main.html"><b>Home</b> </a>
+                <a class="links selected" href="rpi400.html"><b> RPI400</b></a>
+                <a class="links selected" href="rpi5.html"><b>RPI5</b> </a>
+                <a class="links selected" href="rpizero.html"> <b>RPIZERO</b></a>
+                <a class="links selected" href="rpipico.html"><b>RPI_PICO</b> </a>
+
+            </nav>
+        </p>
+    </div>
 
 
 
@@ -188,7 +204,7 @@
     </table>
 </div>
 
-<button  id="toggleButton">Toggle</button>
+<button  id="toggleButton">Megjelenít/Elrejt</button>
 
 <footer id="references">
     <p>Felhasznált források:<br>
@@ -208,7 +224,7 @@
 </div>
 
 </body>
-
+</div>
 
 <script>
     var x = document.getElementById("rpi400_video");

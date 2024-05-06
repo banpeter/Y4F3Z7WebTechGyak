@@ -164,7 +164,7 @@ body{
 #toggleButton{
     position: absolute;
     top: 410%;
-    left: 50%;
+    left: 45%;
 }
 
 .kul{
@@ -197,8 +197,3 @@ td{
 }
 
 
-.linkek{
-    position: absolute;
-    top:500%;
-
-}
