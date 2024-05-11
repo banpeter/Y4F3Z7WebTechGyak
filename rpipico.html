@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Raspberry PI Pico</title>
+    <link rel="stylesheet" href="css/rpipico.css">
+    <link rel="icon" href="img/icon.png">
+    <script src="lib/jquery-3.7.1.min.js" ></script>
+    <script src="jquery/hideTable.js" ></script>
+
+    <style>
+        #wrapper{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1920px;
+        }
+
+        .bot{
+            position: absolute;
+            background-color: rgb(189, 181, 181);
+            width: 100%;
+            height: 10%;
+            top:360%;
+            left:0;
+            overflow: auto;
+            height: auto;
+            text-align: center;
+            color: #d1345c;
+        }
+        #references{
+            position: fixed;
+            z-index: 1;
+            
+        }
+
+
+    </style>
+
+
+</head>
+<div id="wrapper">
+<body>
+
+
+
+    <div class="top">
+        <p class="linkek">
+            <nav>
+                <a class="links selected" href="main.html"><b>Home</b> </a>
+                <a class="links selected" href="rpi400.html"><b> RPI400</b></a>
+                <a class="links selected" href="rpi5.html"><b>RPI5</b> </a>
+                <a class="links selected" href="rpizero.html"> <b>RPIZERO</b></a>
+                <a class="links selected" href="rpipico.html"><b>RPI_PICO</b> </a>
+
+            </nav>
+        </p>
+    </div>
+
+
+
+<div class="fo">
+        <img style="width: 500px; height: 300px;" src="img/pico-rp2040.webp" alt="No source">
+</div>
+
+
+
+
+<video id="rpi400_video" width="400" class="video" controls>
+    <source src="videos/pico.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+</video>
+
+
+
+<div style="position: absolute; top: 10%; width: 100%;">
+    <div style="width: max-content; margin: auto;"> 
+        <p > 
+            <button  onclick="reallySlow()">Nagyon lassú</button> 
+            <button onclick="slow()">lassú</button><br><br>
+            <button onclick="normal()">normál</button>
+            <button onclick="fast()">gyors</button>
+            <button onclick="reallyfast()">nagyon gyors</button><br><br>
+        
+            <button onclick="deaf()">néma</button>
+            <button onclick="loud()">hangos</button>
+            <button onclick="quite()">halk</button><br><br>
+        
+            <button onclick="currently()">Eltelt idő</button>
+            <button onclick="ended()">Vége?</button>
+
+        </p> 
+    </div>
+</div>
+
+
+
+<div class="bevezetoPosition">
+    <div class="bevezeto">
+            <h3><p class="kiscim">Átlalános tudnivalók</p></h3>
+            <p>A <span style="color:#d1345c">Raspberry PI Pico</span>  egy microcontroller, amely elsőre hasonló tűnik az arduinóhoz.</p>
+            <p>Fontos különbség viszont hogy az arduinóval ellentétben a Pico-ban arm processzor van, valamint van benne programozható állapotgég 
+                is (ami az FPGA-hoz hasonlítható).
+            </p>
+            <p>Programozhato micropythonban valamint C/C++ -ban. NAgyszerű SDK valalimnt dokumnetáció készült hozzá, széleskörben felhasználható.
+            </p>
+            
+            <p>Rendelje meg a készletet az alábbi linken: <a href="https://www.rpibolt.hu/Raspberry-Pi-Pico">https://www.rpibolt.hu/Raspberry-Pi-Pico</a> </p>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="kepPosition">
+    <img class="kep" src="img/floorplan.png" alt="No source">
+
+</div>
+    
+
+
+<p class="spec">Specifikációk és egyéb modellek</p>
+
+<div class="listak">
+
+
+    <ul class="lista">
+        <li>RP2040 mikrovezérlő chip, melyet a Raspberry Pi tervezett az Egyesült Királyságban</li>
+        <li>Duális-magos Arm Cortex M0+ processzor, rugalmas órajel akár 133 MHz-ig</li>
+        <li>264KB SRAM és 2MB beépített Flash memória</li>
+        <li>Beágyazott modul lehetővé teszi a direkt forrasztást hordozólapokra</li>
+        <li>USB 1.1 eszköz- és host-támogatással</li>
+        <li>Alacsony energiafogyasztású alvó és készenléti módok</li>
+        <li>Húzás-és-áldozz programozás tömegtárolás felhasználásával USB-n keresztül</li>
+        <li>26 × többfunkciós GPIO tüske</li>
+        <li>2 × SPI, 2 × I2C, 2 × UART, 3 × 12-bites ADC, 16 × vezérelhető PWM csatorna</li>
+        <li>Pontos óra és időzítő a chipen belül</li>
+        <li>Hőmérsékletérzékelő</li>
+        <li>Gyorsított lebegőpontos könyvtárak a chipen belül</li>
+        <li>8 × Programozható I/O (PIO) állapotgép egyedi perifériatámogatáshoz</li>
+    </ul>
+    
+
+</div>
+
+
+
+
+
+
+
+<div class="tablaPosition">
+    <p class="kul">Különbségek</p>
+    <table class="tabla">
+        <tr>
+            <td class="elso_oszlop">Raspberry PI 3</td>
+            <td class="masodik_oszlop">Raspberry PI pcio</td>
+        </tr>
+        <tr>
+            <td>Általánosan felhsználható</td>
+            <td>Beágyazott rendszerek</td>
+        </tr>
+        <tr>
+            <td>Haszálata és összeszerelése tapasztalatot igényel</td>
+            <td>Mélyebb tudást igényel</td>
+        </tr>
+        <tr>
+            <td>A gép megvétele után minden periféria beszerzésére szükség van</td>
+            <td>A hozzácsatlakoztatható eszközöket mind be kell szerezni</td>
+        </tr>
+        <tr>
+            <td>Használata körülményes</td>
+            <td>Használata nehéz</td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="tabla2Position" id="toggleTable">
+    <p class="kul">Promóció</p>
+    <table class="tabla2" id="table2">
+        <tr>
+            <td class="elso_oszlop">Raspberry PI 5</td>
+            <td class="masodik_oszlop">Raspberry PI 400</td>
+        </tr>
+        <tr>
+            <td>Általánosan felhsználható</td>
+            <td>Leginkább asztali számítogépként</td>
+        </tr>
+        <tr>
+            <td>Haszálata és összeszerelése tapasztalatot igényel</td>
+            <td>Kezdőbarát egyszerű kialakítású</td>
+        </tr>
+        <tr>
+            <td>A gép megvétele után minden periféria beszerzésére szükség van</td>
+            <td>A billentyűzet bele van integrálva</td>
+        </tr>
+        <tr>
+            <td>Használata macerás</td>
+            <td>Használata felhasználó barát</td>
+        </tr>
+    </table>
+</div>
+
+<button  id="toggleButton">Megjelenít/Elrejt</button>
+
+<footer id="references">
+    <p>Felhasznált források:<br>
+    <a href="references.html">Források</a></p>
+</footer>
+
+
+<div class="bot">
+    <p class="linkek">
+        <nav>
+            <a class="links selected" href="main.html"> Home</a>
+            <a class="links" href="https://www.rpibolt.hu/Raspberry-Pi-Pico"> Rendelés</a>
+            <a class="links" href="https://www.raspberrypi.com/contact/"> Kapcsolat felvétel</a>
+            <a class="links" href="https://www.raspberrypi.com/">További információk</a>
+        </nav>
+    </p>
+</div>
+
+</body>
+</div>
+
+<script>
+    var x = document.getElementById("rpi400_video");
+
+
+    function reallySlow() { 
+        x.playbackRate = 0.25;
+    } 
+
+    function slow() { 
+        x.playbackRate = 0.5;
+    } 
+
+    function normal() { 
+        x.playbackRate = 1;
+    } 
+
+    function fast() { 
+        x.playbackRate = 1.25;
+    } 
+
+    function reallyfast() { 
+        x.playbackRate = 1.5;
+    } 
+
+    function deaf() { 
+        x.volume = 0
+    } 
+
+    function loud() { 
+        x.volume = 1;
+    } 
+
+    function quite() { 
+        x.volume = 0.5;
+    } 
+
+    function playVid() {
+        x.play();
+    }
+
+    function pauseVid() {
+        x.pause();
+    }
+
+    function pausedVid() {
+        if(x.paused){
+            x.play();
+        }
+        else{
+            x.pause();
+        }
+    }
+
+
+
+
+
+    function currently() {
+        alert("Az eddig eltelt idő: " + x.currentTime + " mp");
+    }
+
+    function ended() {
+        if(x.ended){
+            alert("Véget ért a videó")
+        }
+        else{
+            alert("Még nem ért véget a videó")
+        }
+    }
+
+
+
+
+
+</script>
+
+
+</html>

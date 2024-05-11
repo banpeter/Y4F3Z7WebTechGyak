@@ -1,0 +1,175 @@
+@keyframes example {
+    0%   { left:50%;}
+
+    100% { left:80%;}
+ 
+  }
+
+body{
+    /*background-color: rgb(182, 235, 237);*/
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.top{
+    background-color: #d1345c;
+    width: 100%;
+    height: 10%;
+    top:0;
+    left:0;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+}
+.cim{
+    
+    font-size: large;
+    font-weight: bolder;    
+}
+
+
+.fo{
+    
+    position: absolute;
+    top:10%;
+    left:0%;
+    
+}
+
+
+.kiscim{
+    position: relative;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:#d1345c;
+    
+}
+
+.bev{
+    
+    position: absolute;
+    width: 80%;
+    top: 60%;
+    left: 10%;
+    
+
+    
+}
+
+.auto{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 100px;
+    height: 100px;
+    
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.haz{
+    position: absolute;
+    left: 80%;
+    top: 30%;
+
+}
+.wearehouse{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.kep{
+    position: absolute;
+    left:350px;
+    top: 105%;
+    width: 100px;
+}
+
+.listak{
+    position: absolute;
+    top:210%;
+    left:10%;
+}
+.lista{
+    display: inline-block;
+    position: relative;
+
+    width: 500px;
+}
+.lista2{
+    display: inline-block;
+    left:130%;
+    position: absolute;
+    width: 400px;
+    
+}
+
+.spec{
+    top: 203%;
+    left:40%;
+    position: absolute;
+    font-size: large;
+    font-weight: bolder; 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d1345c;
+
+    
+}
+.tabla{
+    top: 270%;
+    left: 15%;
+    position: absolute;
+
+
+
+}
+.kul{
+    position: absolute;
+    top: -50%;
+    left: 45%;
+    font-size: large;
+    font-weight: bolder; 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d1345c;
+}
+
+table, th, td {
+    border: 1px solid #d1345c;
+    border-collapse: collapse;
+    padding: 10px;
+    
+
+
+}
+td{
+    width:500px;
+}
+.elso_oszlop{
+    text-align: center;
+}
+.masodik_oszlop{
+    text-align: center;
+}
+
+.bot{
+    position: absolute;
+    background-color: rgb(189, 181, 181);
+    width: 100%;
+    height: 10%;
+    top:310%;
+    left:0;
+    overflow: auto;
+    height: auto;
+    text-align: center;
+    color: #d1345c;
+}
+.linkek{
+    top:-10%
+    ;
+
+}

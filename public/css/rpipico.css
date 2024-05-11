@@ -1,0 +1,200 @@
+
+body{
+    background-color: rgb(213, 244, 203);
+    font-family: "Time New Roman",Times,serif;
+
+}
+
+.top{
+    background-color: #d1345c;
+    width: 100%;
+    height: 10%;
+    top:0;
+    left:0;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+}
+.cim{
+    
+    font-size: large;
+    font-weight: bolder;    
+}
+
+
+.fo{
+    
+    position: absolute;
+    top:10%;
+    left:0%;
+    
+}
+
+
+.kiscim{
+    position: relative;
+    font-size: large;
+    margin: auto;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:#d1345c;
+    
+}
+
+.bevezetoPosition{
+    position: absolute;
+    width: 100%;
+    top: 60%;
+
+}
+
+.bevezeto{
+    
+   
+    margin: auto;
+    width: 50%;
+    text-align: justify;
+    
+}
+
+
+
+.video{
+    position: absolute;
+    right: 0px;
+    top: 11%;
+    width: 40%;
+    height: 40%;
+
+}
+
+
+
+.kepPosition{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+}
+
+.kep{
+    
+
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 33%;
+}
+
+
+
+
+
+.listak {
+    position: absolute;
+    top: 210%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; /* Center the lists horizontally */
+}
+
+.lista,
+.lista2 {
+    display: inline-block; /* Make the lists display inline so they stay horizontally centered */
+    vertical-align: top; /* Align the lists to the top */
+    text-align: left; /* Align the list items to the left */
+    margin: 0;
+    padding: 0;
+}
+
+.lista2 {
+    margin-left: 20px; /* Adjust spacing between the two lists */
+}
+
+
+
+
+
+
+
+
+.spec{
+    top: 203%;
+    left:40%;
+    position: absolute;
+    font-size: large;
+    font-weight: bolder; 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d1345c;
+
+    
+}
+.tablaPosition{
+    top: 270%;
+    width: 100%;
+    position: absolute;
+
+
+
+}
+
+.tabla{
+    margin:auto
+
+
+
+}
+
+.tabla2Position{
+    position: absolute;
+    top: 320%;
+    width: 100%;
+   
+
+}
+
+.tabla2{
+    margin:auto
+
+}
+
+#toggleButton{
+    position: absolute;
+    top: 350%;
+    left: 45%;
+}
+
+.kul{
+    position: absolute;
+    top: -50%;
+    left: 45%;
+    font-size: large;
+    font-weight: bolder; 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d1345c;
+}
+
+table, th, td {
+    border: 1px solid #d1345c;
+    border-collapse: collapse;
+    padding: 10px;
+    
+
+
+}
+td{
+    width:500px;
+}
+.elso_oszlop{
+    text-align: center;
+}
+.masodik_oszlop{
+    text-align: center;
+}
+
+
