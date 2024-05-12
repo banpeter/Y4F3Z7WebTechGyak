@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-ui-1.13.3/jquery-ui.min.js"></script>
+    <script src="Y4F3Z7_4.js" defer></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.3/jquery-ui.min.css">
+    <title>jQuery feladatok - Animáció</title>
+    <style>
+        .box, .box2 {
+            width: 300px;
+            height: 120px;
+            padding: 20px;
+            
+            background-color: #44ffaa;
+            
+            position: relative;
+
+            font-weight: bold;
+            font-size: 12pt;
+        }
+        form {
+            display: inline-block;
+            background-color: #aaccff;
+            padding: 1rem;
+            padding-right: 10rem;
+            margin: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>A Y4F3Z7_4 feladati újragondolva</h1>
+ 
+    <div id="accordion">
+        <h3>Első feladat</h3>
+
+
+        <div>
+            <h1>jQuery feladatok - Animáció</h1>
+            <button class="ui-button ui-widget ui-corner-all" onclick="anim()">Animáció indítása</button>
+            <button class="ui-button ui-widget ui-corner-all" onclick="$('p').hide()">Bekezdések elrejtése</button>
+            <button class="ui-button ui-widget ui-corner-all" onclick="toggle()">Összecsuk / Kinyit</button>
+            <p>
+                <b>A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.</b>
+            </p>
+            <p>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</p>
+            <p>
+                <b>Effekteket és animációt adhatunk HTML elemeikhez. Számtalan plugint írtak hozzá.</b>
+            </p>
+            <div class="box">
+                ME GEIK-PTI
+            </div>
+        </div>
+
+
+
+        <h3>Második feladat</h3>
+            <div>
+                <h1>jQuery feladat</h1>
+                <h2>Adjon meg két számot!</h2>
+                <label>
+                    <b>A=</b> <input type="number" id="a" value="0">
+                </label><br><br>
+                <label>
+                    <b>B=</b> <input type="number" id="b" value="0">
+                </label><br><br>
+                <fieldset>
+                    <input type="radio" name="op" id="mul" value="mul" checked>A*B <br>
+                    <input type="radio" name="op" id="div" value="div">A/B <br>
+                    <input type="radio" name="op" id="add" value="add">A+B <br>
+                    <input type="radio" name="op" id="sub" value="sub">A-B <br>
+                </fieldset><br>
+                <button id="calc" class="ui-button ui-widget ui-corner-all">Számol</button><br>
+                <p id="result">Eredmény: </p>
+            </div>
+   
+        </div>
+
+
+    </div>
+    <script>
+        $( "#accordion" ).accordion({
+            active: 0
+        });
+    </script>
+</body>
+</html>

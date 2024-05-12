@@ -1,0 +1,26 @@
+{
+    "kurzusnev": "Web technológia alapjai",
+    "oktato": "Dr. Agárdi Anita",
+    "szak": "GÉIK Mérnökinformatikus",
+    "idopont": {
+        "nap": "Hétfő",
+        "tol": "8:00",
+        "ig" : "9:30"
+    },
+    "helyszin": "X. előadó",
+    "cim": {
+        "irsz": "1021",
+        "varos": "Miskolc",
+        "utca": "Egyetemváros"
+    },
+    "telefonszamok": [
+        {
+            "tipus": "mobil",
+            "szam": "06-30-123-4567"
+        },
+        {
+            "tipus": "vezetékes",
+            "szam": "06-46-565-111"
+        }
+    ]
+}

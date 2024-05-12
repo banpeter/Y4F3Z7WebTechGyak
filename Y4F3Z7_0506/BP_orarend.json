@@ -1,5 +1,5 @@
 {
-"orak":[
+"kurzusok":[
     {
     "kurzusnev": "Webtechnológiák alapjai",
     "oktato":"Dr. Bednarik László",
@@ -13,25 +13,27 @@
     "helyszin":"Inf/103",
     "cim":
         {
-            "street":"Egyetemváros",
-            "city": "Miskolc",
-            "code":"1021"
+            "irsz":"Egyetemváros",
+            "varos": "Miskolc",
+            "utca":"1021"
         },
-    "phone number":
+    "telefonszamok":
         [
 
             {
-                "type": "Vezetékes:",
-                "number":"0630 459-668"
+                "tipus": "Vezetékes:",
+                "szam":"0630 459-668"
             },
             {
-                "type":"Mobil:",
-                "number":"0630 320-222"
+                "tipus":"Mobil:",
+                "szam":"0630 320-222"
             }
 
         ]
 
 },
+
+
 {
 
     "kurzusnev": "SzoftverTechnológiák gyakorlat",
@@ -375,7 +377,7 @@
 {
 
     "kurzusnev": "Java gyakorlat",
-    "oktato":"a",
+    "oktato":"Fürjes Balázs",
     "szak":"GEIK",
     "idopont":
         {
@@ -383,7 +385,7 @@
             "tol":"10:00",
             "ig":"11:30"
         },
-    "helyszin":"A1/XXXII",
+    "helyszin":"Inf/101",
     "cim":
         {
             "street":"Egyetemváros",
