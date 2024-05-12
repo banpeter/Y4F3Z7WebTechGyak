@@ -34,47 +34,84 @@
             color: #d1345c;
             z-index: 1;
         }
-        #references{
-            top:0;
-            position: fixed;
-            z-index: 1;
-            
-        }
+
 
         .jsondiv{
             position: absolute;
             top: 250%;
             right: 10%;
         }
+        body, html {
+        margin: 0;
+        padding: 0;
+    }
 
+    .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Change the background color */
+    overflow: hidden;
+    z-index: 1000; /* Ensure the navbar appears on top of other elements */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd; /* Change the background color on hover */
+    color: black;
+}
 
     </style>
 </head>
 <div id="wrapper">
 <body>
 
+    
+
+
     <div class="topcim">
         <p class="cim"> <span style="color: #d1345c">Raspberry PI Home</span></p>
     </div>
-    
-    <div class="top">
-        <p class="linkek">
-            <nav>
-                <a class="links selected" href="main.html"><b>Home</b> </a>
-                <a class="links selected" href="rpi400.html"><b> RPI400</b></a>
-                <a class="links selected" href="rpi5.html"><b>RPI5</b> </a>
-                <a class="links selected" href="rpizero.html"> <b>RPIZERO</b></a>
-                <a class="links selected" href="rpipico.html"><b>RPI_PICO</b> </a>
 
-            </nav>
-        </p>
+
+    
+    <div class="navbar">
+        
+           <ul>
+            <li><a  href="main.html"><b>Home</b> </a></li>
+            <li><a  href="rpi400.html"><b> RPI 400</b></a></li>
+            <li><a  href="rpi5.html"><b>RPI 5</b> </a></li>
+            <li><a  href="rpizero.html"> <b>RPI ZERO</b></a></li> 
+            <li><a  href="rpipico.html"><b>RPI PICO</b> </a></li> 
+           </ul>
+
     </div>
 
 
     
     <div class="fo">
             <img style="width: 100%;" src="/img/hero.webp" alt="No source">
+            
     </div>
+    <p class="ref1"> <b>Forrás:<a href="https://www.raspberrypi.com/">https://www.raspberrypi.com/</a></b> </p>
     
     
     
@@ -115,8 +152,8 @@
 
 
 
-    <section style="position: absolute; top: 250%;">
-        <form action="#" method="post" id="myForm">
+    <section style="position: absolute; top: 250%; left: 1%;">
+        <form action="/redirect" method="post" id="myForm">
             <label for="name">Név:</label>
             <input type="text" id="name" name="name"><br><br>
             <span id="email_error" style="color: red;"></span>
@@ -170,14 +207,11 @@
 
     
 
-    <footer id="references">
-        <p>Felhasznált források:<br>
-        <a href="references.html">Források</a></p>
-    </footer>
 
     <div class="bottom"><span style="color: white;"><p>További információkért keressel fel a <a>https://www.raspberrypi.com/</a>-ot</p></span> </div>
 
 </body>
 
 </div>
+
 </html>

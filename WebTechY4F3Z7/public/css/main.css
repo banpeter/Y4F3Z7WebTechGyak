@@ -1,8 +1,8 @@
 
 
 body{
-    /*background-color: rgb(182, 235, 237);*/
-    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(213, 244, 203);
+    font-family: "Time New Roman",Times,serif;
 
 }
 .top{
@@ -41,9 +41,14 @@ body{
     
 }
 
+.ref1{
+    position: absolute;
+    top: 140%;
+}
+
 
 section {
-    width: 50rem;
+    width: 25%;
 
     background-color:#d1345c;
     padding: 1rem;

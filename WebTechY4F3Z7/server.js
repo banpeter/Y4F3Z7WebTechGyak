@@ -51,10 +51,6 @@ app.get('/references.html', (req, res) => {
 });
 
 
-
-
-
-
 const jsonFile = path.join(__dirname, 'public/jquery/users2.json');
 
 // JSON fájl kiszolgálása

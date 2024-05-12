@@ -23,12 +23,39 @@
             text-align: center;
             color: #d1345c;
         }
-        #references{
-            position: fixed;
-            z-index: 1;
-            
-        }
 
+        .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Change the background color */
+    overflow: hidden;
+    z-index: 1000; /* Ensure the navbar appears on top of other elements */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd; /* Change the background color on hover */
+    color: black;
+}
 
     </style>
 
@@ -38,25 +65,24 @@
 <body>
 
  
-    <div class="top">
-        <p class="linkek">
-            <nav>
-                <a class="links selected" href="main.html"><b>Home</b> </a>
-                <a class="links selected" href="rpi400.html"><b> RPI400</b></a>
-                <a class="links selected" href="rpi5.html"><b>RPI5</b> </a>
-                <a class="links selected" href="rpizero.html"> <b>RPIZERO</b></a>
-                <a class="links selected" href="rpipico.html"><b>RPI_PICO</b> </a>
+    <div class="navbar">
+        
+        <ul>
+         <li><a  href="main.html"><b>Home</b> </a></li>
+         <li><a  href="rpi400.html"><b> RPI 400</b></a></li>
+         <li><a  href="rpi5.html"><b>RPI 5</b> </a></li>
+         <li><a  href="rpizero.html"> <b>RPI ZERO</b></a></li> 
+         <li><a  href="rpipico.html"><b>RPI PICO</b> </a></li> 
+        </ul>
 
-            </nav>
-        </p>
-    </div>
+ </div>
 
 
 
 <div class="fo">
         <img style="width: 600px; height: 300px;" src="img/pi5-labelled.jpg" alt="No source">
 </div>
-
+<p class="ref1"> <b>Forrás:<a href="https://grobotronics.com/raspberry-pi-5-4gb.html">https://grobotronics.com/raspberry-pi-5-4gb.html</a></b> </p>
 
 
 
@@ -64,7 +90,7 @@
     <source src="videos/rpi5.mp4" type="video/mp4">
     Your browser does not support HTML video.
 </video>
-
+<p class="ref2"> <b>Forrás:<a href="https://www.youtube.com/watch?v=yul4gq_LrOI">https://www.youtube.com/watch?v=yul4gq_LrOI</a></b> </p>
 
 
 <div style="position: absolute; top: 10%; width: 100%;">
@@ -91,7 +117,7 @@
 
 <div class="bevezetoPosition">
     <div class="bevezeto">
-        <article></article>
+        <article>
             <h3><p class="kiscim">Átlalános tudnivalók</p></h3>
             <p>A <span style="color:#d1345c">Raspberry PI 5</span>  egy olyan új modell amely a rendkívül népszerű Raspberry pi 4-es modell következő verziója. 
                 Csak úgy mint az előző verzióval számos lehetősgé áll rendelkezésünkre amelyet megvalósíthatunk eme remek eszközzel.</p>
@@ -115,6 +141,7 @@
     <img class="kep" src="img/raspberry-pi-5.webp" alt="No source">
 
 </div>
+<p class="ref3"> <b>Forrás:<a href="https://www.raspberrypi.com/products/raspberry-pi-5/">https://www.raspberrypi.com/products/raspberry-pi-5/</a></b> </p>
     
 
 
@@ -145,12 +172,8 @@
         <li>Real-time clock (RTC), tápellátás külön csatlakoztatható külső telepről</li>
         <li>Bekapcsoló gomb (Power button)</li>
     </ul>
-    
-
-
-
 </div>
-
+<p class="ref4"> <b>Forrás:<a href="https://grobotronics.com/raspberry-pi-5-4gb.html">https://grobotronics.com/raspberry-pi-5-4gb.html</a></b> </p>
 
 
 
@@ -212,10 +235,6 @@
 
 <button  id="toggleButton">Megjelenít/Elrejt</button>
 
-<footer id="references">
-    <p>Felhasznált források:<br>
-    <a href="references.html">Források</a></p>
-</footer>
 
 
 <div class="bot">
