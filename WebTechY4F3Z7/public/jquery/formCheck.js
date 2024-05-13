@@ -39,6 +39,10 @@ $(document).ready(function() {
         if (error) {
             event.preventDefault();
         }
+        else{
+            alert("Elküldve");
+            event.preventDefault();
+        }
     });
     
     $('#name, #email').on('input', function() {
